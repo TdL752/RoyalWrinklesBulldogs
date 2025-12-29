@@ -43,6 +43,41 @@ nav {
 	margin: 5px 30px;
 }
 
+#splash-img {
+	width: 100%;
+	margin-top: 35px;
+}
+
+#splash-image-container {
+	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/a_90/v1767034050/20251229_134538_esc5si.jpg");
+	background-color: black;
+	height: 60rem;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	font-size: 75px;
+}
+
+.heading-container {
+	background-color: #e9fbf7;
+	border: 10px solid #85bcac;
+	border-radius: 30px;
+	width: 75rem;
+	margin: 5rem auto;
+}
+
+.heading-text {
+	font-family: ephesis, roboto;
+	color: black;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
 /* image containers */
 
 .top-container {
@@ -76,32 +111,6 @@ nav {
 }
 
 /* done */
-
-#splash-img {
-	width: 100%;
-	margin-top: 35px;
-}
-
-#splash-image-container {
-	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/a_90/v1767034050/20251229_134538_esc5si.jpg");
-	background-color: black;
-	height: 60rem;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-bottom: 20rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: 300;
-	font-size: 75px;
-}
-
-.heading-text {
-	font-family: ephesis, roboto;
-	color: black;
-	letter-spacing: 10px;
-}
 
 #home-btn-image {
 	width: 3rem;
