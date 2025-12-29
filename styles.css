@@ -43,28 +43,14 @@ nav {
 	margin: 5px 30px;
 }
 
-/* Dogs container */
-
-.dog-container {
-	margin: 50px auto;
-	width: 300px;
-}
-
-.inner-dogs-container {
-	width: 300px;
-	border-radius: 0 0 25px 25px;
-	text-align: center;
-	padding: 20px 0;
-}
-
-.dog-img {
-	width: 300px;
-	border-radius: 25px 25px 0 0;
-}
-
-/* Done */
-
 /* image containers */
+
+.top-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 15rem auto;
+}
 
 .outer-container {
 	background-color: #85bcac;
@@ -77,6 +63,16 @@ nav {
 
 .inner-container {
 	background-color: #e9fbf7;
+	border-radius: 0 0 25px 25px;
+	text-align: center;
+	padding: 15px;
+	width: 370px;
+}
+
+.contained-image {
+	width: 400px;
+	background-color: white;
+	border-radius: 25px 25px 0 0;
 }
 
 /* done */
@@ -86,13 +82,8 @@ nav {
 	margin-top: 35px;
 }
 
-#homepage-dogs {
-	display: flex;
-	margin: auto 10%;
-}
-
 #splash-image-container {
-	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/a_-90/v1766976282/20251228_214342_vhdyjw.jpg");
+	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/a_90/v1767034050/20251229_134538_esc5si.jpg");
 	background-color: black;
 	height: 60rem;
 	width: 100%;
@@ -106,30 +97,11 @@ nav {
 	font-size: 75px;
 }
 
-#splash-text {
+.heading-text {
 	font-family: ephesis, roboto;
 	color: black;
 	letter-spacing: 10px;
 }
-
-/* about us containers */
-
-#about-us-container {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.about-us-image {
-	width: 300px;
-	background-color: white;
-}
-
-.about-text {
-	width: 300px;
-}
-
-/* done */
 
 #home-btn-image {
 	width: 3rem;
@@ -147,4 +119,3 @@ nav {
 		background: black;
 	}
 }
-
