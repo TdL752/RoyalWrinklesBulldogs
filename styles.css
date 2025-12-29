@@ -1,0 +1,150 @@
+* {
+	font-family: roboto, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background: linear-gradient(to left, #5A716A80, #6DC0D580);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+.link:hover {
+	color: #5A716A;
+	cursor: pointer;
+}
+
+#links-container {
+	margin: 0px auto 0px 15%;
+	min-width: 500px;
+	display: inline-flex;
+	gap: 10%;
+}
+
+.tag-img {
+	width: 30px;
+	border-radius: 20px;
+	margin: 5px 30px;
+}
+
+/* Dogs container */
+
+.dog-container {
+	margin: 50px auto;
+	width: 300px;
+}
+
+.inner-dogs-container {
+	width: 300px;
+	border-radius: 0 0 25px 25px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.dog-img {
+	width: 300px;
+	border-radius: 25px 25px 0 0;
+}
+
+/* Done */
+
+/* image containers */
+
+.outer-container {
+	background-color: #85bcac;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 35px;
+	padding: 30px;
+}
+
+.inner-container {
+	background-color: #e9fbf7;
+}
+
+/* done */
+
+#splash-img {
+	width: 100%;
+	margin-top: 35px;
+}
+
+#homepage-dogs {
+	display: flex;
+	margin: auto 10%;
+}
+
+#splash-image-container {
+	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/a_-90/v1766976282/20251228_214342_vhdyjw.jpg");
+	background-color: black;
+	height: 60rem;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	font-size: 75px;
+}
+
+#splash-text {
+	font-family: ephesis, roboto;
+	color: black;
+	letter-spacing: 10px;
+}
+
+/* about us containers */
+
+#about-us-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.about-us-image {
+	width: 300px;
+	background-color: white;
+}
+
+.about-text {
+	width: 300px;
+}
+
+/* done */
+
+#home-btn-image {
+	width: 3rem;
+	height: 3rem;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	background: #5A716A80;
+	border-radius: 3rem;
+	opacity: .7;
+}
+
+@media screen and (max-width: 900px) {
+	nav {
+		background: black;
+	}
+}
+
