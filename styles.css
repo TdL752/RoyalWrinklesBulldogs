@@ -15,6 +15,7 @@ nav {
 	left: 0;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .link {
@@ -31,16 +32,9 @@ nav {
 }
 
 #links-container {
-	margin: 0px auto 0px 15%;
 	min-width: 500px;
 	display: inline-flex;
 	gap: 10%;
-}
-
-.tag-img {
-	width: 30px;
-	border-radius: 20px;
-	margin: 5px 30px;
 }
 
 #splash-img {
@@ -78,6 +72,10 @@ nav {
 	text-align: center;
 }
 
+.text {
+	padding: 5%;
+}
+
 /* image containers */
 
 .top-container {
@@ -100,12 +98,11 @@ nav {
 	background-color: #e9fbf7;
 	border-radius: 0 0 25px 25px;
 	text-align: center;
-	padding: 15px;
-	width: 370px;
+	width: 60%;
 }
 
 .contained-image {
-	width: 400px;
+	width: 60%;
 	background-color: white;
 	border-radius: 25px 25px 0 0;
 }
@@ -123,8 +120,12 @@ nav {
 	opacity: .7;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
+	#links-container {
+		display: none;
+	}
+
 	nav {
-		background: black;
+		height: 30px;
 	}
 }
