@@ -31,7 +31,7 @@
 				Contact Us
 			</h1>
 		</div>
-		<form action="/submit-form" method="POST">
+		<form action="/.netlify/functions/submit-form" method="POST">
 			<fieldset>
 				<div class="fieldset-section">
 					<label for="name">
@@ -83,6 +83,43 @@
     		    	lengthText.style.color = "black";
     			}
 			});
+
+			import { neon } from '@netlify/neon';
+
+			export default async (req, context) => {
+			  // Only allow POST requests
+			  if (req.method !== "POST") {
+			    return new Response("Method Not Allowed", { status: 405 });
+			  }
+
+			  try {
+			    // Parse the form data
+			    const formData = await req.formData();
+			    const name = formData.get("name");
+			    const email = formData.get("email");
+			    const phone = formData.get("phone");
+			    const questions = formData.get("questions");
+
+			    // Connect to Neon
+			    const sql = neon();
+
+			    // Insert into database
+			    await sql`
+			      INSERT INTO contacts (name, email, phone, message)
+			      VALUES (${name}, ${email}, ${phone}, ${questions})
+			    `;
+
+			    // Redirect or show success
+			    return new Response(null, {
+			      status: 302,
+			      headers: { "Location": "/success.html" }
+			    });
+
+			  } catch (error) {
+			    console.error(error);
+			    return new Response("Error saving data", { status: 500 });
+			  }
+			};
 		</script>
     </body>
 </html>
