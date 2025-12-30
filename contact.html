@@ -55,7 +55,10 @@
 					<label for="questions">
 						Leave a short message with any questions you would like answered:
 					</label>
-					<textarea rows="4" name="questions" id="questions"></textarea>
+					<textarea maxlength="200" resize="vertical" rows="4" name="questions" id="questions"></textarea>
+					<p id="textarea-length">
+						0/200
+					</p>
 				</div>
 				<button type="submit" id="contact-submit-button">
 					Submit
@@ -65,5 +68,22 @@
         <a id="home-link" href="/">
 			<img alt="homepage" id="home-btn-image" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1766978623/dog-kennel-silhouette-clipart_gqxqpa.png" />
 		</a>
+		<script>
+			const textarea = document.getElementById('questions');
+			const lengthText = document.getElementById('textarea-length');
+			const maxLength = 200;
+
+			textarea.addEventListener('input', () => {
+		    	const currentLength = textarea.value.length;
+    			lengthText.textContent = `${currentLength}/${maxLength}`;
+    
+    			// Optional: Turn text red if it hits the limit
+    			if (currentLength >= maxLength) {
+    		    	lengthText.style.color = "red";
+    			} else {
+    		    	lengthText.style.color = "black";
+    			}
+			});
+		</script>
     </body>
 </html>
