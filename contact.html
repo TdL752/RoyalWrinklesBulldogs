@@ -76,8 +76,7 @@
 			textarea.addEventListener('input', () => {
 		    	const currentLength = textarea.value.length;
     			lengthText.textContent = `${currentLength}/${maxLength}`;
-    
-    			// Optional: Turn text red if it hits the limit
+
     			if (currentLength >= maxLength) {
     		    	lengthText.style.color = "red";
     			} else {
