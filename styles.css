@@ -16,6 +16,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 40px;
 }
 
 .link {
@@ -76,10 +77,9 @@ nav {
 	padding: 5%;
 }
 
-/* image containers */
-
 .top-container {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 	margin: 15rem auto;
@@ -92,22 +92,68 @@ nav {
 	flex-direction: column;
 	border-radius: 35px;
 	padding: 30px;
+	width: 30%;
+	margin: 5rem auto;
 }
 
 .inner-container {
 	background-color: #e9fbf7;
 	border-radius: 0 0 25px 25px;
 	text-align: center;
-	width: 60%;
 }
 
 .contained-image {
-	width: 60%;
+	display: block;
 	background-color: white;
 	border-radius: 25px 25px 0 0;
 }
 
-/* done */
+.inner-container, .contained-image {
+	width: 100%;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+}
+
+.fieldset-section {
+	margin: 2rem auto;
+}
+
+label {
+	font-size: 25px;
+	margin: auto 20px;
+}
+
+input, textarea {
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid #85bcac;
+	font-size: 25px;
+}
+
+#questions {
+	display: block;
+	width: 100%;
+	margin: 2rem auto;
+}
+
+button {
+	margin: 2rem auto;
+	font-size: 25px;
+	background-color: #e9fbf7;
+	border: 2px solid #85bcac;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+button:hover {
+	background-color: #85bcac;
+	cursor: pointer;
+}
 
 #home-btn-image {
 	width: 3rem;
