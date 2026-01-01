@@ -13,7 +13,7 @@ export default async (req, context) => {
         const phone = formData.get("phone");
         const message = formData.get("questions");
 
-        const sql = neon();
+        const sql = neon(process.env.DATABASE_URL);
 
         await sql`
             INSERT INTO contacts (name, email, phone, message)
