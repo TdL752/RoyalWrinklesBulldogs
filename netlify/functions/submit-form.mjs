@@ -22,7 +22,7 @@ export default async (req, context) => {
 
         return new Response(null, {
             status: 302,
-            headers: { "Location": "/success.html" }
+            headers: { "Location": "/thanks.html" }
         });
 
     } catch (error) {
