@@ -1,6 +1,7 @@
 {
   "name": "royal-wrinkles-bulldogs",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@netlify/neon": "^0.2.2"
   }
