@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
+	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width initial-scale=1.0'>
 		<link rel="stylesheet" href="styles.css">
@@ -9,8 +9,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
 		<title>Bulldogs</title>
 	</head>
-    <body>
-        <nav>
+	<body>
+		<nav>
+			<img id="collapse" alt="menu button" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767394651/2048px-Hamburger-menu_-_Delapouite_-_white_-_game-icons.svg_ufsjmm.png" />
 			<div id="links-container">
 				<a class="link" href="/about">
 					About Us
@@ -26,6 +27,20 @@
 				</a>
 			</div>
 		</nav>
+		<div id="collapse-menu" class="hidden">
+			<a class="link" href="/about">
+				About Us
+			</a>
+			<a class="link" href="/available">
+				Available
+			</a>
+			<a class="link" href="/reviews">
+				Reviews
+			</a>
+			<a class="link" href="/contact">
+				Contact Us
+			</a>
+		</div>
 		<div class="heading-container">
 			<h1 class="heading-text">
 				Contact Us
@@ -68,21 +83,6 @@
         <a id="home-link" href="/">
 			<img alt="homepage" id="home-btn-image" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1766978623/dog-kennel-silhouette-clipart_gqxqpa.png" />
 		</a>
-		<script>
-			const textarea = document.getElementById('questions');
-			const lengthText = document.getElementById('textarea-length');
-			const maxLength = 200;
-
-			textarea.addEventListener('input', () => {
-		    	const currentLength = textarea.value.length;
-    			lengthText.textContent = `${currentLength}/${maxLength}`;
-
-    			if (currentLength >= maxLength) {
-    		    	lengthText.style.color = "red";
-    			} else {
-    		    	lengthText.style.color = "black";
-    			}
-			});
-		</script>
+		<script src="script.js"></script>
     </body>
 </html>

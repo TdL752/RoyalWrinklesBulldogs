@@ -62,7 +62,7 @@ nav {
 	background-color: #e9fbf7;
 	border: 10px solid #85bcac;
 	border-radius: 30px;
-	width: 75rem;
+	width: 75%;
 	margin: 5rem auto;
 }
 
@@ -170,12 +170,63 @@ button:hover {
 	opacity: .7;
 }
 
+#collapse {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
 @media screen and (max-width: 600px) {
 	#links-container {
 		display: none;
 	}
 
 	nav {
-		height: 30px;
+		height: 40px;
+	}
+
+	.heading-container {
+		margin: 2re auto;
+	}
+
+	.outer-container {
+		width: 75%;
+		padding: 10px;
+		margin: 3rem auto;
+	}
+
+	.text {
+		font-size: 10px;
+	}
+
+	.heading-text {
+		font-size: 20px;
+	}
+
+	#collapse {
+		display: block;
+		width: 30px;
+	}
+
+	#collapse:hover {
+		cursor: pointer;
+		background-color: rgb(105, 169, 149);
+		border-radius: 30px;
+	}
+
+	#collapse-menu {
+		background-color: #6DC0D580;
+		position: fixed;
+		top: 40px;
+		height: 100%;
+		width: 100%;
+		padding-top: 3rem;
+	}
+
+	.link {
+		display: block;
+		margin: 1rem;
 	}
 }
