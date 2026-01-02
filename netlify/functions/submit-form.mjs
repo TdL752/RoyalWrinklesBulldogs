@@ -1,43 +1,37 @@
 import { neon } from '@neondatabase/serverless';
 
-export default async (req, context) => {
-    if (req.method !== "POST") {
-        return new Response("Method Not Allowed", { status: 405 });
+export default async (req) => {
+    // 1. Check if the variable exists at all
+    const dbUrl = process.env.DATABASE_URL;
+
+    if (!dbUrl) {
+        console.error("DEBUG ERROR: DATABASE_URL is undefined!");
+        return Response.json({ error: 'Missing Connection String' }, { status: 500 });
     }
 
     try {
         const formData = await req.formData();
-        
-        // NEW: Try 3 different ways to get the connection string
-        const connectionString = 
-            process.env.DATABASE_URL || 
-            process.env.NETLIFY_DATABASE_URL || 
-            (typeof Netlify !== 'undefined' ? Netlify.env.get("DATABASE_URL") : null);
+        const sql = neon(dbUrl);
 
-        if (!connectionString) {
-            console.error("LOG: No connection string found in any environment.");
-            return new Response("Database setup incomplete", { status: 500 });
-        }
-
-        const sql = neon(connectionString);
-        
-        const name = formData.get("name");
-        const email = formData.get("email");
-        const phone = formData.get("phone");
-        const message = formData.get("questions");
-
+        // 2. Simple insert
         await sql`
             INSERT INTO contacts (name, email, phone, message)
-            VALUES (${name}, ${email}, ${phone}, ${message})
+            VALUES (
+                ${formData.get("name")}, 
+                ${formData.get("email")}, 
+                ${formData.get("phone")}, 
+                ${formData.get("questions")}
+            )
         `;
 
+        // 3. Success redirect
         return new Response(null, {
             status: 302,
             headers: { "Location": "/thanks.html" }
         });
 
     } catch (error) {
-        console.error("Database Error:", error);
-        return new Response("Error: " + error.message, { status: 500 });
+        console.error("SQL ERROR:", error);
+        return Response.json({ error: error.message }, { status: 500 });
     }
 };
