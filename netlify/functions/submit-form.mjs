@@ -8,12 +8,18 @@ export default async (req, context) => {
     try {
         const formData = await req.formData();
         
+        const connectionString = process.env.DATABASE_URL || process.env.NETLIFY_DATABASE_URL;
+
+        if (!connectionString) {
+            return new Response("Database connection string missing", { status: 500 });
+        }
+
+        const sql = neon(connectionString);
+        
         const name = formData.get("name");
         const email = formData.get("email");
         const phone = formData.get("phone");
         const message = formData.get("questions");
-
-        const sql = neon(process.env.DATABASE_URL);
 
         await sql`
             INSERT INTO contacts (name, email, phone, message)
