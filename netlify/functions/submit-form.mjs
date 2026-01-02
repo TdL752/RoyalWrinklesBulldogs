@@ -14,7 +14,7 @@ export default async (req, context) => {
             return new Response("Database connection string missing", { status: 500 });
         }
 
-        const sql = neon(connectionString);
+        const sql = neon('postgresql://neondb_owner:npg_RFprVZz6vw0E@ep-long-glitter-aew5pbso-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require');
         
         const name = formData.get("name");
         const email = formData.get("email");
