@@ -8,13 +8,18 @@ export default async (req, context) => {
     try {
         const formData = await req.formData();
         
-        const connectionString = process.env.DATABASE_URL || process.env.NETLIFY_DATABASE_URL;
+        // NEW: Try 3 different ways to get the connection string
+        const connectionString = 
+            process.env.DATABASE_URL || 
+            process.env.NETLIFY_DATABASE_URL || 
+            (typeof Netlify !== 'undefined' ? Netlify.env.get("DATABASE_URL") : null);
 
         if (!connectionString) {
-            return new Response("Database connection string missing", { status: 500 });
+            console.error("LOG: No connection string found in any environment.");
+            return new Response("Database setup incomplete", { status: 500 });
         }
 
-        const sql = neon('postgresql://neondb_owner:npg_RFprVZz6vw0E@ep-long-glitter-aew5pbso-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require');
+        const sql = neon(connectionString);
         
         const name = formData.get("name");
         const email = formData.get("email");
@@ -33,6 +38,6 @@ export default async (req, context) => {
 
     } catch (error) {
         console.error("Database Error:", error);
-        return new Response("Error saving to database", { status: 500 });
+        return new Response("Error: " + error.message, { status: 500 });
     }
 };
