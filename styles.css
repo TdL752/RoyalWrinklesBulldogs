@@ -1,6 +1,5 @@
 * {
 	font-family: roboto, sans-serif;
-	letter-spacing 1px;
 }
 
 body {
@@ -215,7 +214,8 @@ button:hover {
 	}
 
 	.heading-text {
-		font-size: 20px;
+		font-size: 35px;
+		font-weight: 700;
 	}
 
 	.outer-container {
