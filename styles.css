@@ -1,6 +1,6 @@
 * {
 	font-family: roboto, sans-serif;
-	letter-spacing: 1px;
+	letter-spacing 1px;
 }
 
 body {
@@ -34,9 +34,9 @@ nav {
 }
 
 #links-container {
-	min-width: 500px;
-	display: inline-flex;
-	gap: 10%;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10rem;
 }
 
 #splash-img {
@@ -60,6 +60,8 @@ nav {
 }
 
 .heading-container {
+	display: flex;
+	justify-content: center;
 	background-color: #e9fbf7;
 	border: 10px solid #85bcac;
 	border-radius: 30px;
@@ -103,14 +105,30 @@ nav {
 	text-align: center;
 }
 
-.contained-image {
+.inner-container {
+	border-radius: 0 0 25px 25px;
+}
+
+.contained-image.contained-image-top, .middle-image {
 	display: block;
 	background-color: white;
+	
+}
+
+.contained-image-top {
 	border-radius: 25px 25px 0 0;
 }
 
-.inner-container, .contained-image {
+.inner-container, .contained-image, .contained-image-top, .middle-image {
 	width: 100%;
+}
+
+.text-container {
+	border-radius: 25px;
+}
+
+.bottom-container {
+	margin-top: 2rem;
 }
 
 fieldset {
@@ -172,13 +190,11 @@ button:hover {
 	opacity: .7;
 }
 
-#collapse {
+.hidden, #collapse {
 	display: none;
 }
 
-.hidden {
-	display: none;
-}
+
 
 @media screen and (max-width: 600px) {
 	#links-container {
@@ -216,13 +232,14 @@ button:hover {
 
 	#collapse {
 		display: block;
-		width: 30px;
+		height: 30px;
+		padding: 0px 15px;
+		border-radius: 5px;
 	}
 
 	#collapse:hover {
 		cursor: pointer;
 		background-color: rgb(105, 169, 149);
-		border-radius: 30px;
 	}
 
 	#collapse-menu {
