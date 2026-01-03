@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-	background: linear-gradient(to left, #5A716A80, #6DC0D580);
+	background: linear-gradient(to left, #0F102080, #7353BA80);
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -28,7 +28,7 @@ nav {
 }
 
 .link:hover {
-	color: #5A716A;
+	color: #0F1020;
 	cursor: pointer;
 }
 
@@ -44,7 +44,7 @@ nav {
 }
 
 #splash-image-container {
-	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/a_90/v1767034050/20251229_134538_esc5si.jpg");
+	background-image: url("https://res.cloudinary.com/dbuwekmex/image/upload/e_gen_recolor:prompt_(whole picture);to-color_A500F8;multiple_true/a_-90/e_sharpen/v1767034050/20251229_134538_esc5si.jpg");
 	background-color: black;
 	height: 60rem;
 	width: 100%;
@@ -61,8 +61,8 @@ nav {
 .heading-container {
 	display: flex;
 	justify-content: center;
-	background-color: #e9fbf7;
-	border: 10px solid #85bcac;
+	background-color: #7353BA;
+	border: 10px solid #2F195F;
 	border-radius: 30px;
 	width: 75%;
 	margin: 5rem auto;
@@ -70,7 +70,7 @@ nav {
 
 .heading-text {
 	font-family: ephesis, roboto;
-	color: black;
+	color: #EFC3F5;
 	letter-spacing: 10px;
 	text-align: center;
 }
@@ -88,7 +88,7 @@ nav {
 }
 
 .outer-container {
-	background-color: #85bcac;
+	background-color: #2F195F;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -99,7 +99,7 @@ nav {
 }
 
 .inner-container {
-	background-color: #e9fbf7;
+	background-color: #fdf0ff;
 	border-radius: 0 0 25px 25px;
 	text-align: center;
 }
@@ -150,7 +150,7 @@ label {
 input, textarea {
 	padding: 5px;
 	border-radius: 10px;
-	border: 2px solid #85bcac;
+	border: 2px solid #0F1020;
 	font-size: 25px;
 }
 
@@ -167,14 +167,14 @@ input, textarea {
 button {
 	margin: 2rem auto;
 	font-size: 25px;
-	background-color: #e9fbf7;
-	border: 2px solid #85bcac;
+	background-color: #7353BA;
+	border: 2px solid #2F195F;
 	padding: 10px;
 	border-radius: 10px;
 }
 
 button:hover {
-	background-color: #85bcac;
+	background-color: #2F195F;
 	cursor: pointer;
 }
 
@@ -184,7 +184,7 @@ button:hover {
 	position: fixed;
 	bottom: 1rem;
 	right: 1rem;
-	background: #5A716A80;
+	background: #2F195F;
 	border-radius: 3rem;
 	opacity: .7;
 }
@@ -239,11 +239,11 @@ button:hover {
 
 	#collapse:hover {
 		cursor: pointer;
-		background-color: rgb(105, 169, 149);
+		background-color: #7353BA;
 	}
 
 	#collapse-menu {
-		background-color: #6DC0D580;
+		background-color: #2F195F80;
 		position: fixed;
 		top: 40px;
 		height: 100%;
