@@ -1,5 +1,6 @@
 * {
 	font-family: roboto, sans-serif;
+	letter-spacing: 1px;
 }
 
 body {
@@ -126,6 +127,7 @@ fieldset {
 label {
 	font-size: 25px;
 	margin: auto 20px;
+	display: block;
 }
 
 input, textarea {
@@ -187,22 +189,29 @@ button:hover {
 		height: 40px;
 	}
 
+	#splash-image-container {
+		height: 50rem;
+	}
+
 	.heading-container {
 		margin: 2re auto;
+		width: 90%;
+	}
+
+	.heading-text {
+		font-size: 20px;
 	}
 
 	.outer-container {
-		width: 75%;
+		width: 90%;
 		padding: 10px;
 		margin: 3rem auto;
 	}
 
 	.text {
-		font-size: 10px;
-	}
-
-	.heading-text {
-		font-size: 20px;
+		font-size: 15px;
+		padding: 5px;
+		font-weight: bold;
 	}
 
 	#collapse {
