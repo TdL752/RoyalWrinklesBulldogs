@@ -75,6 +75,14 @@ nav {
 	text-align: center;
 }
 
+.puppy-id-container {
+	background-color: #2F195F;
+	width: 30%;
+	border: 10px solid #7353BA;
+	border-radius: 30px;
+	margin: 15rem auto -15rem auto;
+}
+
 .text {
 	padding: 5%;
 }
