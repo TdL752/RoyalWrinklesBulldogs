@@ -1,61 +1,232 @@
 <!DOCTYPE html>
-<html lang='en'>
-	<head>
-		<meta charset='utf-8'>
-		<meta name='viewport' content='width=device-width initial-scale=1.0'>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="icon" href="https://res.cloudinary.com/dbuwekmex/image/upload/v1767551146/Canis_lupis_track_oqpegj.svg">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-		<title>Bulldogs</title>
-	</head>
-	<body>
-		<nav>
-			<img id="collapse" alt="menu button" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767394651/2048px-Hamburger-menu_-_Delapouite_-_white_-_game-icons.svg_ufsjmm.png" />
-			<div id="links-container">
-				<a class="link" href="/about">
-					About Us
-				</a>
-				<a class="link" href="/available">
-					Available
-				</a>
-				<a class="link" href="/contact">
-					Contact Us
-				</a>
-			</div>
-		</nav>
-		<div id="collapse-menu" class="hidden">
-			<a class="link" href="/about">
-				About Us
-			</a>
-			<a class="link" href="/available">
-				Available
-			</a>
-			<a class="link" href="/contact">
-				Contact Us
-			</a>
-		</div>
-		<div class="heading-container">
-			<h1 class="heading-text">
-				Our available puppies
-			</h1>
-		</div>
-		<div class="top-container">
-			<div class="outer-container">
-				<img alt="brindle male" class="contained-image-top" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767407510/IMG_20260102_213042_dhlhzj.jpg" />
-				<img alt="brindle male" class="middle-image" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767407510/IMG_20260102_213044_botduv.jpg" />
-				<img alt="brindle male" class="middle-image" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767407509/IMG_20260102_213046_zfvfu7.jpg" />
-				<div class="inner-container">
-					<p class="text">
-						The last puppy from Matildas litter is a brindle male that is AKC registered reaching eight weeks on January 21st.
-					</p>
-				</div>
-			</div>
-		</div>
-		<a alt="homepage" id="home-link" href="/">
-			<img id="home-btn-image" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1766978623/dog-kennel-silhouette-clipart_gqxqpa.png" />
-		</a>
-		<script src="script.js"></script>
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <title>Royal Wrinkles Bulldogs</title>
+    </head>
+    <body>
+        <div id="top-nav-container">
+            <a class="home-link" rel="home" href="/">
+                Royal Wrinkles Bulldogs
+            </a>
+        </div>
+        <nav>
+            <div id="nav-link-container">
+                <a class="nav-link" href="/learn">
+                    Learn More
+                </a>
+                <a class="nav-link" href="/available">
+                    Available
+                </a>
+                <a class="nav-link" href="/contact">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                    Magenta
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="11">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767407510/IMG_20260102_213042_dhlhzj.jpg" />
+                <button class="button right-button" data-puppy="11">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                        This is an energetic and fun loving pup.
+                </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                    Red
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="1">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768190583/IMG_2018_1_tamz7k.jpg" />
+                <button class="button right-button" data-puppy="1">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                        This is a very energetic and curious lilac and tan pup.
+                </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                    Blue
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="2">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-2" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768190629/IMG_1995_otkmwu.jpg" />
+                <button class="button right-button" data-puppy="2">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                        This is a beautiful lilac and tan pup with a white spot.
+                </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                    Green
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="3">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768190671/IMG_1922_qw5uma.jpg" />
+                <button class="button right-button" data-puppy="3">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                        This is one of the most energetic pups of the day, almost walking off of our table multiple times. 
+                Lilac fawn and white in a beautiful pattern.
+                </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                    White
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="4">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768190736/IMG_1955_ko361e.jpg" />
+                <button class="button right-button" data-puppy="4">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                        This is a beautifully patterned chocolate and merle pup.
+                </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                    Pink
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="5">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768190814/IMG_1807_fa9xxb.jpg" />
+                <button class="button right-button" data-puppy="5">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                        This is playful and very well built blue and tan.
+                </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                Purple
+            </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="6">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768190957/IMG_1827_fi74mh.jpg" />
+                <button class="button right-button" data-puppy="6">
+                    &gt;
+                </button>
+            </div>
+            <p class='desc available-text'>
+                This blue and tan has some really nice white markings that bring some contrast to it's coat.
+            </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                        Violet
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="7">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768191002/IMG_1752_pnx8fq.jpg" />
+                <button class="button right-button" data-puppy="7">
+                    &gt;
+                </button>
+            </div>
+            <p class="desc available-text">
+                This is chunky chocolate and tan pup with lots of energy to bring into the home.
+            </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                        Orange
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="8">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768191127/IMG_1767_swtsj3.jpg" />
+                <button class="button right-button" data-puppy="8">
+                    &gt;
+                </button>
+            </div>
+            <p class="desc available-text">
+                Another chocolate and tan pup with white markings that lead to beautiful contrast.
+            </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                        Yellow
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="9">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768191158/IMG_2023_sfo3ov.jpg" />
+                <button class="button right-button" data-puppy="9">
+                    &gt;
+                </button>
+            </div>
+            <p class="desc available-text">
+                This lilac and tan has been laid back and comfortable.
+            </p>
+        </div>
+
+        <div class="available-container">
+            <h1 class='available-name available-text'>
+                        Gray
+                </h1>
+            <div class="available-image-container">
+                <button class="button left-button" data-puppy="10">
+                    &lt;
+                </button>
+                <img class="available-image" id="img-1" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1768191244/IMG_1901_majxqd.jpg" />
+                <button class="button right-button" data-puppy="10">
+                    &gt;
+                </button>
+            </div>
+            <p class="desc available-text">
+                The smallest of the litter is this lilac, fawn, and white pup. 
+                She may be small but she is the most energetic pup of the litter.
+            </p>
+        </div>
+        <script src='script.js'></script>
+    </body>
 </html>
