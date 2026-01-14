@@ -196,4 +196,22 @@ nav {
     .desc {
         margin: 2rem 5% auto 5%;
     }
+
+    .right-button:hover {
+        background: transparent;
+    }
+
+    .left-button:hover {
+        background: transparent;
+    }
+
+    .right-button:active {
+        background-image: linear-gradient(to right, transparent, rgb(180, 255, 255));
+        border-radius: 0 10px 10px 0;
+    }
+
+    .left-button:active {
+        background-image: linear-gradient(to left, transparent, rgb(180, 255, 255));
+        border-radius: 10px 0 0 10px;
+    }
 }
