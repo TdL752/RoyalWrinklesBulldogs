@@ -131,4 +131,4 @@ function changeImage() {
     slideElement.src = images[currentIndex];
 }
 
-setInterval(changeImage, 4000);
+setInterval(changeImage, 2500);
