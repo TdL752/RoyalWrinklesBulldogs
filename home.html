@@ -37,6 +37,26 @@
                 All of our puppies have reqular vet checks from the time they are born; they are also tested for common health problems. 
             </p>
         </div>
-        <script src='script.js'></script>
+        <script>
+		const images = [
+    			'https://res.cloudinary.com/dbuwekmex/image/upload/v1767040791/IMG_20251229_153829_cp0rgb.jpg',
+    			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768190814/IMG_1807_fa9xxb.jpg',
+   			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768191003/IMG_1763_uaqofi.jpg',
+    			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768190671/IMG_1922_qw5uma.jpg',
+			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768420940/IMG_2178_unhwql.jpg',
+			'https://res.cloudinary.com/dbuwekmex/image/upload/v1767407510/IMG_20260102_213042_dhlhzj.jpg'
+		];
+
+		let currentIndex = 0;
+		const slideElement = document.getElementById('slideshow');
+
+		function changeImage() {
+    			currentIndex = (currentIndex + 1) % images.length;
+    
+    			slideElement.src = images[currentIndex];
+		}
+
+		setInterval(changeImage, 2500);
+	</script>
     </body>
 </html>

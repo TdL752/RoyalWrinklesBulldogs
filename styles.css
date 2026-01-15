@@ -190,7 +190,11 @@ nav {
     }
 
     .available-image-container {
-        width: 90%;
+        width: 95%;
+    }
+
+    .available-image {
+        border-radius: 0px;
     }
 
     .desc {
@@ -207,11 +211,11 @@ nav {
 
     .right-button:active {
         background-image: linear-gradient(to right, transparent, rgb(180, 255, 255));
-        border-radius: 0 10px 10px 0;
+	border-radius: 0px;
     }
 
     .left-button:active {
         background-image: linear-gradient(to left, transparent, rgb(180, 255, 255));
-        border-radius: 10px 0 0 10px;
+	border-radius: 0px;
     }
 }

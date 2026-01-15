@@ -122,13 +122,4 @@ document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', imageCarousel);
 });
 
-let currentIndex = 0;
-const slideElement = document.getElementById('slideshow');
 
-function changeImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    
-    slideElement.src = images[currentIndex];
-}
-
-setInterval(changeImage, 2500);
