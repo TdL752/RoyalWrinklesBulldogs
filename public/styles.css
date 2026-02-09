@@ -81,11 +81,13 @@ nav {
     border-radius: 50px;
 }
 
-#home-splash-img {
+#splash-image-container {
+    margin-top: -40px;
+    background-image: url('https://res.cloudinary.com/dbuwekmex/image/upload/v1770673801/IMG_20260209_164923_ftl8uv.jpg');
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -50px;
+    background-position: center;
+    height: 100vh;
 }
 
 .contact-container {
@@ -141,7 +143,7 @@ nav {
     font-size: 30px;
     text-align: center;
     color: white;
-    margin: 4rem 20%;;
+    margin: 4rem 20%;
 }
 
 .available-image-container {
@@ -200,8 +202,13 @@ nav {
         font-size: 12px;
     }
 
+    .home-link {
+        font-size: 30px;
+    }
+
     #home-page-container, .contact-container, .available-container {
-        width: 90%;
+        width: 80%;
+        margin: 15rem auto;
         padding: 20px;
     }
 
