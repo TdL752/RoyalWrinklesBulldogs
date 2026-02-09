@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <title>Royal Wrinkles Bulldogs</title>
+    </head>
+    <body>
+        <div id="top-nav-container">
+            <a class="home-link" rel="home" href="/">
+                Royal Wrinkles Bulldogs
+            </a>
+        </div>
+        <nav>
+            <div id="nav-link-container">
+                <a class="nav-link" href="/learn">
+                    Learn More
+                </a>
+                <a class="nav-link" href="/available">
+                    Available
+                </a>
+                <a class="nav-link" href="/contact">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+        <img id="home-splash-img" alt="bulldog puppy splash image" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767407510/IMG_20260102_213042_dhlhzj.jpg" />
+
+        <div id="home-page-container">
+            <div id="slideshow-container">
+                <img id="slideshow" src="https://res.cloudinary.com/dbuwekmex/image/upload/v1767040791/IMG_20251229_153829_cp0rgb.jpg" alt="Slideshow" width="500">
+            </div>
+            <p class="text">
+                Royal Wrinkles breeds dogs to AKC standards using ethical breeding practices. 
+                All of our puppies have reqular vet checks from the time they are born; they are also tested for common health problems. 
+            </p>
+        </div>
+        <script>
+		const images = [
+    			'https://res.cloudinary.com/dbuwekmex/image/upload/v1767040791/IMG_20251229_153829_cp0rgb.jpg',
+    			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768190814/IMG_1807_fa9xxb.jpg',
+   			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768191003/IMG_1763_uaqofi.jpg',
+    			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768190671/IMG_1922_qw5uma.jpg',
+			'https://res.cloudinary.com/dbuwekmex/image/upload/v1768420940/IMG_2178_unhwql.jpg',
+			'https://res.cloudinary.com/dbuwekmex/image/upload/v1767407510/IMG_20260102_213042_dhlhzj.jpg'
+		];
+
+		let currentIndex = 0;
+		const slideElement = document.getElementById('slideshow');
+
+		function changeImage() {
+    			currentIndex = (currentIndex + 1) % images.length;
+    
+    			slideElement.src = images[currentIndex];
+		}
+
+		setInterval(changeImage, 2500);
+	</script>
+    </body>
+</html>

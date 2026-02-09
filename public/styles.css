@@ -1,0 +1,237 @@
+* {
+    font-family: roboto, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+#top-nav-container {
+    background: black;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 10px 0;
+}
+
+.home-link, .available-name {
+    font-size: 50px;
+    font-family: "Dancing Script", sans-serif;
+    font-weight: bold;
+    color: rgb(228, 148, 0);
+    text-decoration: none;
+}
+
+.home-link:hover {
+    cursor: pointer;
+    color: rgb(105, 68, 0);
+}
+
+nav {
+    height: 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(black, black, transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(156, 101, 0);
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: rgb(105, 68, 0);
+    cursor: pointer;
+}
+
+#nav-link-container {
+    width: 75%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#slideshow-container {
+    height: 100%;
+}
+
+#slideshow {
+    width: 100%;
+    display: flex;
+    border-radius: 40px;
+}
+
+#home-page-container, .contact-container, .container, .available-container {
+    background-color: white;
+    width: 40%;
+    padding: 4rem;
+    margin: 30rem auto;
+    border-radius: 50px;
+}
+
+#home-splash-img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
+
+.contact-container {
+    max-width: 300px;
+}
+
+.text {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+}
+
+.paragraph-head {
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 5rem auto;
+    font-size: 20px;
+}
+
+.image {
+    display: flex;
+    float: left;
+    width: 50%;
+    max-width: 250px;
+    margin: 10px;
+}
+
+.content-link {
+    color: rgb(153, 99, 0);
+    text-decoration: none;
+}
+
+.content-link:hover {
+    color: rgb(105, 68, 0);
+}
+
+.available-name {
+    font-size: 40px !important;
+    text-align: center;
+}
+
+.desc {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 2rem 20% auto 20%;
+    text-align: center;
+}
+
+.explanation-header {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 4rem 20%;;
+}
+
+.available-image-container {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.available-image {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.button {
+    border: none;
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(105, 68, 0)
+}
+
+.right-button {
+    right: 0;
+}
+
+.left-button {
+    left: 0;
+}
+
+.left-arrow, .right-arrow {
+    width: 30px;
+}
+
+.right-button:hover {
+    background-image: linear-gradient(to right, transparent, rgb(228, 148, 0));
+    border-radius: 0 30px 30px 0;
+}
+
+.left-button:hover {
+    background-image: linear-gradient(to left, transparent, rgb(228, 148, 0));
+    border-radius: 30px 0 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-link-container {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    #home-page-container, .contact-container, .available-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .available-image-container {
+        width: 95%;
+    }
+
+    .available-image {
+        border-radius: 0px;
+    }
+
+    .desc {
+        margin: 2rem 5% auto 5%;
+    }
+
+    .right-button:hover, .left-button:hover {
+        background: transparent;
+    }
+
+    .right-button:active {
+        background-image: linear-gradient(to right, transparent, rgb(228, 148, 0));
+	    border-radius: 0px;
+    }
+
+    .left-button:active {
+        background-image: linear-gradient(to left, transparent, rgb(228, 148, 0));
+        border-radius: 0px;
+    }
+}
