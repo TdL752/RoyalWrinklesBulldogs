@@ -206,14 +206,10 @@ nav {
         font-size: 30px;
     }
 
-    #home-page-container, .contact-container, .available-container {
+    #home-page-container, .contact-container, .available-container, .container {
         width: 80%;
         margin: 15rem auto;
         padding: 20px;
-    }
-
-    .container {
-        width: 80%;
     }
 
     .available-image-container {
