@@ -194,8 +194,16 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-    .nav-link-container {
+    #top-nav-container {
+        height: 40px;
+    }
+
+    #nav-link-container {
         width: 100%;
+    }
+
+    nav {
+        height: 25px;
     }
 
     .nav-link {
@@ -204,6 +212,10 @@ nav {
 
     .home-link {
         font-size: 30px;
+    }
+
+    #splash-image-container {
+        height: 320px;
     }
 
     #home-page-container, .contact-container, .available-container, .container {
