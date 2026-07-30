@@ -1,0 +1,171 @@
+* {
+	--brown: rgb(150, 97, 0);
+	--cream-transparent: rgba(255, 250, 235, .6);
+	--cream: rgb(255, 250, 235);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* splash */
+
+#splash {
+	width: 100%;
+	position: relative;
+	text-align: right;
+}
+
+#splash-image, #splash-text {
+	width: 75%;
+}
+
+#splash-text {
+	height: 100%;
+	background-image: linear-gradient(to right, white, white, transparent);
+	position: absolute;
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+
+#splash-text h1 {
+	margin-left: 10%;
+	font-size: 4rem;
+	font-family: "croissant one", roboto, sans-serif;
+	color: var(--brown);
+}
+
+/* nav */
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: var(--cream-transparent);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgb(179, 179, 179);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	top: 0;
+	z-index: 100;
+}
+
+#hero-link {
+	text-decoration: none;
+	transition: color .2s;
+	color: var(--brown);
+	font-family: 'croissant one', roboto, sans-serif;
+	margin: auto auto auto 30px;
+}
+
+#hero-link:hover {
+	cursor: pointer;
+	color: black;
+}
+
+#nav-link-container {
+	height: 100%;
+	display: flex;
+	gap: 5rem;
+	align-items: center;
+	justify-content: flex-end;
+	margin: auto 30px auto auto;
+}
+
+.nav-link {
+	font-family: roboto, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	transition: color .2s;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+	color: var(--brown);
+}
+
+/* divider */
+
+.divider {
+	width: 75%;
+	height: 2px;
+	background-image: linear-gradient(to right, transparent, var(--brown), transparent);
+	margin: 5rem auto;
+}
+
+/* section */
+
+section {
+	margin: 0;
+}
+
+#about {
+	background-color: var(--brown);
+	padding: 5rem 0;
+}
+
+#space {
+	height: 1000px;
+	background-color: red;
+	width: 10px;
+}
+
+.section-container {
+	width: 65%;
+	margin: auto;
+}
+
+/* containers */
+
+.content-container {
+	padding: 1rem;
+	border-radius: 30px;
+}
+
+/* headers */
+
+.section-header {
+	font-size: 40px;
+	text-align: center;
+	font-family: "croissant one", roboto, sans-serif;
+	color: var(--brown);
+}
+
+/* about section */
+
+#about-content-container {
+	background-color: var(--cream);
+}
+
+
+
+@media screen and (max-width: 600px) {
+	nav {
+		height: 40px;
+	}
+
+	#hero-text {
+		font-size: 1.5rem;
+	}
+
+	#nav-link-container {
+		display: none;
+	}
+
+	#splash-text h1 {
+		margin-left: 20px;
+		font-size: 1.5rem;
+	}
+
+	.section-container {
+		width: 90%;
+	}
+
+	.section-header {
+		font-size: 1.5rem;
+	}
+}
