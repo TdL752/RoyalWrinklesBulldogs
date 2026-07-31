@@ -1,3 +1,7 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 * {
 	scroll-behavior: smooth;
 	--brown: rgb(150, 97, 0);
@@ -114,6 +118,10 @@ section {
 	background-color: var(--cream);
 }
 
+#contact {
+	background-color: var(--brown);
+}
+
 .section-container {
 	width: 65%;
 	margin: auto;
@@ -124,6 +132,13 @@ section {
 .content-container {
 	padding: 4rem;
 	border-radius: 30px;
+}
+
+#contact-container {
+	background-color: var(--cream);
+	padding: 5rem 0;
+	border-radius: 30px;
+
 }
 
 /* headers and text content */
@@ -180,6 +195,10 @@ section {
 
 	.section-container {
 		width: 90%;
+	}
+
+	#contact-container {
+		padding: 1rem 0;
 	}
 
 	.section-header {
