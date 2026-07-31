@@ -1,4 +1,5 @@
 * {
+	scroll-behavior: smooth;
 	--brown: rgb(150, 97, 0);
 	--cream-transparent: rgba(255, 250, 235, .6);
 	--cream: rgb(255, 250, 235);
@@ -101,17 +102,16 @@ nav {
 
 section {
 	margin: 0;
+	padding: 5rem 0;
 }
 
 #about {
 	background-color: var(--brown);
-	padding: 5rem 0;
+	
 }
 
-#space {
-	height: 1000px;
-	background-color: red;
-	width: 10px;
+#care {
+	background-color: var(--cream);
 }
 
 .section-container {
@@ -122,18 +122,31 @@ section {
 /* containers */
 
 .content-container {
-	padding: 1rem;
+	padding: 4rem;
 	border-radius: 30px;
 }
 
-/* headers */
+/* headers and text content */
 
 .section-header {
-	font-size: 40px;
+	font-size: 3rem;
 	text-align: center;
 	font-family: "croissant one", roboto, sans-serif;
 	color: var(--brown);
+	margin: 2rem auto 2rem auto;
 }
+
+.sub-header {
+	font-size: 2rem;
+	margin: 8rem auto 1rem 2rem;
+	font-family: roboto, sans-serif;
+}
+
+.text-content, .section-explanation {
+	font-size: 1.8rem;
+	font-family: "playfair", roboto, sans-serif;
+}
+
 
 /* about section */
 
@@ -161,11 +174,24 @@ section {
 		font-size: 1.5rem;
 	}
 
+	.content-container {
+		padding: 1rem;
+	}
+
 	.section-container {
 		width: 90%;
 	}
 
 	.section-header {
 		font-size: 1.5rem;
+	}
+
+	.sub-header {
+		font-size: 1.2rem;
+		margin: 3rem auto 1rem 1rem;
+	}
+
+	.text-content, .section-explanation {
+		font-size: 1rem;
 	}
 }
