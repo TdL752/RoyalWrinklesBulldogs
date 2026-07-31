@@ -110,11 +110,10 @@ section {
 }
 
 #about {
-	background-color: var(--brown);
-	
+	background-color: var(--brown);	
 }
 
-#care {
+#history {
 	background-color: var(--cream);
 }
 
@@ -122,12 +121,16 @@ section {
 	background-color: var(--brown);
 }
 
-.section-container {
-	width: 65%;
-	margin: auto;
+#footer {
+	background-color: var(--cream);
 }
 
 /* containers */
+
+.section-container {
+	width: 50%;
+	margin: auto;
+}
 
 .content-container {
 	padding: 4rem;
@@ -136,9 +139,13 @@ section {
 
 #contact-container {
 	background-color: var(--cream);
-	padding: 5rem 0;
+	padding: 5rem 2rem;
 	border-radius: 30px;
 
+}
+
+#about-content-container {
+	background-color: var(--cream);
 }
 
 /* headers and text content */
@@ -162,13 +169,84 @@ section {
 	font-family: "playfair", roboto, sans-serif;
 }
 
+/* links  */
 
-/* about section */
-
-#about-content-container {
-	background-color: var(--cream);
+.external-link {
+	color: var(--brown);
+	text-decoration: none;
+	transition: color .2s;
 }
 
+.external-link:hover {
+	cursor: pointer;
+	color: black;
+}
+
+/* footer */
+
+#footer-container {
+	padding: 5rem 0 2rem;
+}
+ 
+#footer-top {
+	display: flex;
+	justify-content: space-between;
+	gap: 3rem;
+}
+ 
+#footer-wordmark {
+	display: block;
+	font-family: "croissant one", roboto, sans-serif;
+	font-size: 2rem;
+	text-decoration: none;
+	color: var(--brown);
+	transition: color .2s;
+}
+ 
+#footer-wordmark:hover {
+	cursor: pointer;
+	color: black;
+}
+ 
+#footer-tagline {
+	font-size: 1.1rem;
+	margin: .5rem 0 0;
+}
+ 
+#footer-nav-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+ 
+#footer-contact-heading {
+	font-family: roboto, sans-serif;
+	font-weight: bold;
+	color: var(--brown);
+	margin: 0 0 .5rem;
+}
+ 
+#footer-contact .external-link {
+	font-family: roboto, sans-serif;
+	font-weight: bold;
+}
+ 
+#footer-note {
+	font-size: 1.1rem;
+	margin: .75rem 0 0;
+}
+ 
+#footer-divider {
+	margin: 3rem auto 1.5rem;
+}
+ 
+#footer-bottom-text {
+	font-family: "playfair", roboto, sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	margin: 0;
+	color: var(--brown);
+}
 
 
 @media screen and (max-width: 600px) {
@@ -198,7 +276,7 @@ section {
 	}
 
 	#contact-container {
-		padding: 1rem 0;
+		padding: 1rem;
 	}
 
 	.section-header {
@@ -212,5 +290,26 @@ section {
 
 	.text-content, .section-explanation {
 		font-size: 1rem;
+	}
+
+	#footer-container {
+		padding: 3rem 0 1.5rem;
+	}
+ 
+	#footer-top {
+		flex-direction: column;
+		gap: 2rem;
+	}
+ 
+	#footer-wordmark {
+		font-size: 1.5rem;
+	}
+ 
+	#footer-tagline, #footer-note {
+		font-size: 1rem;
+	}
+ 
+	#footer-divider {
+		margin: 2rem auto 1rem;
 	}
 }
